@@ -1,7 +1,57 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <title>p5.js template</title>
+
+    <!-- load style sheets -->
+    <link rel="stylesheet" type="text/css" href="./web/style.css">
+
+    <!-- load javascript libraries -->
+    <script src="./libraries/p5.min.js"></script>
+    <script src="./libraries/p5.dom.js"></script>
+    <script src="./libraries/p5.sound.js"></script>
+
+    <!-- 3rd-party libraries -->
+
+
+  </head>
+  <body>
+
+  	<div id="sidebar">
+
+  			<ul class ="sidebar">
+        <li><a href='./index.html'>LOBBY</a></li>
+        <li><a href='./index-rides.html'>RIDES</a></li>
+        <li><a href='./index-ride2.html'>RiDe 2</a></li>
+        <li><a href='./index-ride4.html'>RiDe 4</a></li>
+        <li><a href='./index-trip.html'>tRip</a></li>
+  		</ul>
+
+  		<div id="sidebar-btn">
+  			<span></span>
+  			<span></span>
+  			<span></span>
+  		</div>
+
+  	</div>
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script>
+
+  	$(document).ready(function(){
+  		$('#sidebar-btn').click(function(){
+  			$('#sidebar').toggleClass('visible');
+  		});
+  	});
+
+  	</script>
+
+    <!-- some information -->
+    <div class="txt-block"><h2>tRip</h2><p>w8m8, b cautious of fast flashing visuals that may cause seizure. If you choose to go on this tRip then relax, wiggle your fingers on the keyboard and treat your eyes to the RiDes. <br> LET'S GET tRipPy</p></div>
+
+  </body>
+
 </html>

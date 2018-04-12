@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <title>p5.js template</title>
+
+    <!-- load style sheets -->
+    <link rel="stylesheet" type="text/css" href="./web/style.css">
+
+    <!-- load javascript libraries -->
+    <script src="./libraries/p5.min.js"></script>
+    <script src="./libraries/p5.dom.js"></script>
+    <script src="./libraries/p5.sound.js"></script>
+
+    <!-- 3rd-party libraries -->
+
+  </head>
+  <body>
+
+      	<div id="sidebar">
+
+      		<ul class ="sidebar">
+            <li><a href='./index.html'>LOBBY</a></li>
+    				<li><a href='./index-rides.html'>RIDES</a></li>
+    				<li><a href='./index-ride2.html'>RiDe 2</a></li>
+      			<li><a href='./index-ride4.html'>RiDe 4</a></li>
+      			<li><a href='./index-trip.html'>tRip</a></li>
+      		</ul>
+
+      		<div id="sidebar-btn">
+      			<span></span>
+      			<span></span>
+      			<span></span>
+      		</div>
+
+      	</div>
+
+
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      	<script>
+
+      	$(document).ready(function(){
+      		$('#sidebar-btn').click(function(){
+      			$('#sidebar').toggleClass('visible');
+      		});
+      	});
+
+      	</script>
+
+
+    <div class='container'>
+      <!-- main headline -->
+      <div class="h-block"><h1>RIDES<h1></div>
+
+        <div class="img-block">
+          <figure><img src='./assets/images/ride1.gif' /><figcaption>RiDe 1: feast to animated particles</figcaption></figure>
+          <figure><img src='./assets/images/ride2.gif' /><figcaption><a href='./index-ride2.html'>RiDe 2</a>: try the arrow keys</figcaption></figure>
+
+        </div>
+        <div class="img-block">
+          <figure><img src='./assets/images/ride3.gif' /><figcaption>RiDe 3: watch the animated flicker</figcaption></figure>
+          <figure><img src='./assets/images/ride4.gif' /><figcaption><a href='./index-ride4.html'>RiDe 4</a>: try the arrow keys</figcaption></figure>
+        </div>
+
+        <div class="img-block">
+          <figure><img src='./assets/images/toggle.gif' /><figcaption>toggle your <a href='./index-trip.html'>tRip</a> with keypad numbers <br>1 to 4</figure>
+        </div>
+
+
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size:16px;
+}
+
+html,body {
+  font-family:"Courier New";
+  padding: 3em 2em 0em;
+  font-size: 18px;
+  background: #222;
+  color: #aaa
+}
+
+.container {
+  margin-top:-120px;
+  margin-bottom: -150px;
+}
+
+.fullscreen {
+  margin:0;
+  margin-top:-40px;
+
+}
+
+.sketch {
+  margin:0;
+  text-align:center;
+  padding: 0px;
+}
+
+.h-block {
+  margin:10px;
+  text-align:center;
+}
+.h-block h1 {
+  color:#ebebeb;
+  font-size: 5em;
+}
+
+.txt-block {
+  width: 40%;
+  margin: 10px auto;
+}
+
+.txt-block h2 {
+  color: #252525;
+  font-family: Futura;
+  font-size: 3.0em;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.txt-block p {
+  font-size: 1.2em;
+  line-height:1.5em;
+  text-align: justify; text-align-last: center;
+}
+
+.img-block {
+  width:100%;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  text-align:center;
+}
+
+.img-block figure {
+  display: inline-block;
+  width:50%;
+  font-family:"Courier New";
+}
+
+.img-block figure img {
+  padding:10px;
+  width:80%;
+}
+
+
+h1,h2 {
+  font-family:"Futura";
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+
+h1 { font-size: 3.5em; }
+
+h2 {
+  color: #ebebeb;
+  font-size: 2em;
+  background: #ebebeb;
+  padding: 10px;
+
+}
+
+button {
+    font-family: "Futura";
+    padding:5px;
+    }
+
+ul a, a:link, a:visited {
+    color: #aaa;
+    }
+    a:hover {
+    color:#ebebeb;
+    font-style: italic;
+    }
+
+/* sidebar */
+
+#sidebar{
+	width:150px;
+	height:200px;
+	display:block;
+	position:absolute;
+	left:-120px;
+	top:0px;
+	transition:left 0.3s linear;
+}
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+ul.sidebar{
+	margin:0px;
+	padding:0px;
+}
+
+ul.sidebar li{
+	list-style:none;
+}
+
+ul.sidebar li a{
+	background:#ebebeb;
+	color:#252525;
+	border-bottom:1px solid #ebebeb;
+	display:block;
+	width:100px;
+	height: 20px;
+	padding:10px;
+	text-decoration: none;
+  font-family:"Futura";
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+ul.sidebar li a:hover{
+	font-style: italic;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-20px;
+}
+
+#sidebar-btn span{
+	height:2px;
+	background:#ebebeb;
+	margin-bottom:5px;
+	display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+	width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+	width:50%;
+}
+
+/* pop up */
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+          }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+          }
+
+.overlay:target {
+  visibility: hidden;
+  opacity: 0;
+  display:none
+          }
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #252525;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+          }
+
+.popup h2 {
+  margin-top: 0;
+  color: #252525;
+  font-family: "Futura";
+  font-size: 3.0em;
+  text-align:center;
+          }
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+          }
+
+.popup .close:hover {
+  color: orange;
+          }
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+          }
